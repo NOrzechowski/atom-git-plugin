@@ -15,7 +15,7 @@ describe('Pulp', () => {
     activationPromise = atom.packages.activatePackage('pulp');
   });
 
-  describe('when the pulp:fetch event is triggered', () => {
+  describe('when the pulp:toggle event is triggered', () => {
     it('hides and shows the modal panel', () => {
       // Before the activation event the view is not on the DOM, and no panel
       // has been created
@@ -23,7 +23,7 @@ describe('Pulp', () => {
 
       // This is an activation event, triggering it will cause the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'pulp:fetch');
+      atom.commands.dispatch(workspaceElement, 'pulp:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -37,7 +37,7 @@ describe('Pulp', () => {
 
         let pulpPanel = atom.workspace.panelForItem(pulpElement);
         expect(pulpPanel.isVisible()).toBe(true);
-        atom.commands.dispatch(workspaceElement, 'pulp:fetch');
+        atom.commands.dispatch(workspaceElement, 'pulp:toggle');
         expect(pulpPanel.isVisible()).toBe(false);
       });
     });
@@ -55,7 +55,7 @@ describe('Pulp', () => {
 
       // This is an activation event, triggering it causes the package to be
       // activated.
-      atom.commands.dispatch(workspaceElement, 'pulp:fetch');
+      atom.commands.dispatch(workspaceElement, 'pulp:toggle');
 
       waitsForPromise(() => {
         return activationPromise;
@@ -65,7 +65,7 @@ describe('Pulp', () => {
         // Now we can test for view visibility
         let pulpElement = workspaceElement.querySelector('.pulp');
         expect(pulpElement).toBeVisible();
-        atom.commands.dispatch(workspaceElement, 'pulp:fetch');
+        atom.commands.dispatch(workspaceElement, 'pulp:toggle');
         expect(pulpElement).not.toBeVisible();
       });
     });

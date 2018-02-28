@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Fetch code",
-        "command": "pulp:fetch"
+        "label": "Toggle pulp",
+        "command": "pulp:toggle"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "pulp",
           "submenu": [
             {
-              "label": "Fetch code",
-              "command": "pulp:fetch"
+              "label": "Toggle",
+              "command": "pulp:toggle"
             }
           ]
         }
