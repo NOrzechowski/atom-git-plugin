@@ -1,8 +1,8 @@
 'use babel';
 
-import SourcefetchView from '../lib/sourcefetch-view';
+import PulpView from '../lib/pulp-view';
 
-describe('SourcefetchView', () => {
+describe('PulpView', () => {
   it('has one valid test', () => {
     expect('life').toBe('easy');
   });

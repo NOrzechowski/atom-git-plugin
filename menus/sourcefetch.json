@@ -3,7 +3,7 @@
     "atom-text-editor": [
       {
         "label": "Fetch code",
-        "command": "sourcefetch:fetch"
+        "command": "pulp:fetch"
       }
     ]
   },
@@ -12,11 +12,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "sourcefetch",
+          "label": "pulp",
           "submenu": [
             {
               "label": "Fetch code",
-              "command": "sourcefetch:fetch"
+              "command": "pulp:fetch"
             }
           ]
         }

@@ -1,13 +1,13 @@
 {
-  "name": "sourcefetch",
-  "main": "./lib/sourcefetch",
+  "name": "pulp",
+  "main": "./lib/pulp",
   "version": "0.0.0",
-  "description": "A short description of your package",
+  "description": "A Git Pull Helper",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "sourcefetch:fetch"
+    "atom-workspace": "pulp:fetch"
   },
-  "repository": "https://github.com/atom/sourcefetch",
+  "repository": "https://github.com/NOrzechowski/atom-git-plugin",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
